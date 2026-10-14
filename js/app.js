@@ -164,6 +164,9 @@ const Store = {
     const saved = LS.get(KEY);
     const q = new URLSearchParams(location.search);
     this.s = saved && saved.v === 1 ? saved : seed();
+    // короткая ссылка из рассылки: ?k=код → название и город из js/companies.js
+    const co = (window.COMPANIES || {})[(q.get('k') || '').toLowerCase()];
+    if (co) { this.s.company = co.n; this.s.city = co.c || ''; }
     if (q.get('n')) this.s.company = q.get('n').trim().slice(0, 40) || this.s.company;
     if (q.get('c')) this.s.city = q.get('c').trim().slice(0, 30) || this.s.city;
     this.scan();
