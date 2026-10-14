@@ -189,83 +189,254 @@ window.COMPANIES = {
 },
 "estetika-remonta": {
 "n": "Эстетика Ремонта",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#0078b4",
+"pi": "#ffffff",
+"font": "Open Sans",
+"logo": "b/estetika-remonta-logo.png",
+"lb": "#ffffff",
+"hero": "b/estetika-remonta-hero.jpg"
+}
 },
 "rus-interior": {
 "n": "Rus Interior",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Montserrat",
+"logo": "b/rus-interior-logo.png",
+"lb": "#0c0c0c",
+"hero": "b/rus-interior-hero.jpg"
+}
 },
 "gudvill-stroy": {
 "n": "Гудвилл-Строй",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#b6102c",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"lt": "Гудвилл-Строй",
+"lb": "#ffffff",
+"hero": "b/gudvill-stroy-hero.jpg"
+}
 },
 "perestroyka": {
 "n": "Перестройка",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#3fbb7d",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/perestroyka-logo.png",
+"lb": "#ffffff",
+"hero": "b/perestroyka-hero.jpg"
+}
 },
 "effektivnye-kreativnye-i": {
 "n": "Эффективные Креативные Инженерные",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#009c00",
+"pi": "#ffffff",
+"font": "Roboto",
+"up": true,
+"logo": "b/effektivnye-kreativnye-i-logo.png",
+"lb": "#009c00",
+"hero": "b/effektivnye-kreativnye-i-hero.jpg"
+}
 },
 "alektra": {
 "n": "Алэктра",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#e96120",
+"pi": "#ffffff",
+"font": "Montserrat",
+"logo": "b/alektra-logo.png",
+"lb": "#ffffff",
+"hero": "b/alektra-hero.jpg"
+}
 },
 "komfort-grupp": {
 "n": "Комфорт групп",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#e63f24",
+"pi": "#ffffff",
+"font": "Roboto",
+"logo": "b/komfort-grupp-logo.png",
+"lb": "#ffffff",
+"hero": "b/komfort-grupp-hero.jpg"
+}
 },
 "remont-kvartir-72": {
 "n": "Ремонт квартир 72",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#ffea00",
+"pi": "#141414",
+"font": "Roboto",
+"lt": "Ремонт квартир 72",
+"lb": "#ffffff",
+"hero": "b/remont-kvartir-72-hero.jpg"
+}
 },
 "alsero-chelyabinsk": {
 "n": "Alsero Челябинск",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#fdca19",
+"pi": "#141414",
+"h": "#1e1d1c",
+"font": "Manrope",
+"up": true,
+"logo": "b/alsero-chelyabinsk-logo.png",
+"lb": "#1b1d21",
+"hero": "b/alsero-chelyabinsk-hero.jpg"
+}
 },
 "atomstroyremont": {
 "n": "АтомСтройРемонт",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#786024",
+"pi": "#ffffff",
+"font": "Open Sans",
+"logo": "b/atomstroyremont-logo.png",
+"lb": "#ffffff",
+"hero": "b/atomstroyremont-hero.jpg"
+}
 },
 "krepost": {
 "n": "Крепость",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#21b224",
+"pi": "#ffffff",
+"h": "#0a0a0a",
+"font": "Raleway",
+"logo": "b/krepost-logo.png",
+"lb": "#ffffff",
+"hero": "b/krepost-hero.jpg"
+}
 },
 "stroy-garant": {
 "n": "Строй Гарант",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#1863dc",
+"pi": "#ffffff",
+"h": "#0f194d",
+"font": "Montserrat",
+"up": true,
+"logo": "b/stroy-garant-logo.png",
+"lb": "#ffffff",
+"hero": "b/stroy-garant-hero.jpg"
+}
 },
 "brigadir": {
 "n": "Бригадир",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#4790d7",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/brigadir-logo.png",
+"lb": "#ffffff",
+"hero": "b/brigadir-hero.jpg"
+}
 },
 "derzhim-uroven": {
 "n": "Держим Уровень",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ffb000",
+"pi": "#141414",
+"font": "Manrope",
+"logo": "b/derzhim-uroven-logo.png",
+"lb": "#ffffff",
+"hero": "b/derzhim-uroven-hero.jpg"
+}
 },
 "remontno-stroitelnaya-ko": {
 "n": "Ремонтно-строительная компания-ЮГ",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#780000",
+"pi": "#ffffff",
+"font": "Oswald",
+"lt": "Ремонтно-строительная компания-ЮГ",
+"lb": "#ffffff",
+"hero": "b/remontno-stroitelnaya-ko-hero.jpg",
+"dark": true
+}
 },
 "elbrus": {
 "n": "Эльбрус",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#bfab83",
+"pi": "#ffffff",
+"font": "Unbounded",
+"logo": "b/elbrus-logo.png",
+"lb": "#1b1d21",
+"hb": "linear-gradient(135deg, #1f2125, #575042)"
+}
 },
 "nik-remont": {
 "n": "Ник-ремонт",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#0cb300",
+"pi": "#ffffff",
+"font": "Roboto",
+"lt": "Ник-ремонт",
+"lb": "#ffffff",
+"hero": "b/nik-remont-hero.jpg",
+"dark": true
+}
 },
 "ekb-remont": {
 "n": "ЕКБ-Ремонт",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#bc3636",
+"pi": "#ffffff",
+"h": "#282828",
+"font": "Manrope",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #552727)",
+"lt": "ЕКБ-Ремонт"
+}
 },
 "remstroykuban": {
 "n": "РемСтройКубань",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#5ba8b5",
+"pi": "#ffffff",
+"font": "Jost",
+"logo": "b/remstroykuban-logo.png",
+"lb": "#ffffff",
+"hero": "b/remstroykuban-hero.jpg",
+"dark": true
+}
 },
 "home-dizayn-remont": {
 "n": "Home Дизайн & Ремонт",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#ffdd2d",
+"pi": "#141414",
+"font": "Inter",
+"logo": "b/home-dizayn-remont-logo.png",
+"lb": "#ffffff",
+"hero": "b/home-dizayn-remont-hero.jpg"
+}
 },
 "perestroy-ka": {
 "n": "Перестрой-ка",
@@ -273,63 +444,201 @@ window.COMPANIES = {
 },
 "kvarta-ekaterinburg": {
 "n": "Кварта Екатеринбург",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#d89c48",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/kvarta-ekaterinburg-logo.png",
+"lb": "#1b1d21",
+"hero": "b/kvarta-ekaterinburg-hero.jpg",
+"dark": true,
+"lt": "Кварта",
+"li": "#ffffff"
+}
 },
 "uspeh": {
 "n": "Успех",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#ffdc60",
+"pi": "#141414",
+"font": "Manrope",
+"lt": "Успех",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #6d6135)",
+"dark": true
+}
 },
 "re-stroy": {
 "n": "Re: Строй",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#e86614",
+"pi": "#ffffff",
+"font": "Montserrat",
+"lt": "Re: Строй",
+"lb": "#ffffff",
+"hero": "b/re-stroy-hero.jpg",
+"dark": true
+}
 },
 "stroy-dom": {
 "n": "Строй Дом",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#f3a00c",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/stroy-dom-logo.png",
+"lb": "#ffffff",
+"hero": "b/stroy-dom-hero.jpg"
+}
 },
 "remont-komfort": {
 "n": "Ремонт комфорт",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#3e30a0",
+"pi": "#ffffff",
+"font": "Jost",
+"logo": "b/remont-komfort-logo.png",
+"lb": "#ffffff",
+"hero": "b/remont-komfort-hero.jpg",
+"dark": true
+}
 },
 "promaster": {
 "n": "Promaster",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#fc6c00",
+"pi": "#ffffff",
+"font": "Poppins",
+"up": true,
+"logo": "b/promaster-logo.png",
+"lb": "#2d2c2c",
+"hero": "b/promaster-hero.jpg"
+}
 },
 "tochka-remonta": {
 "n": "Tochka_remonta",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#d62747",
+"pi": "#ffffff",
+"h": "#222222",
+"font": "Inter",
+"up": true,
+"logo": "b/tochka-remonta-logo.svg",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #5f212d)"
+}
 },
 "tsentr-evroremonta": {
 "n": "Центр Евроремонта",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#4dd140",
+"pi": "#141414",
+"h": "#3f4a5e",
+"font": "Manrope",
+"lt": "Центр Евроремонта",
+"lb": "#ffffff",
+"hero": "b/tsentr-evroremonta-hero.jpg",
+"dark": true
+}
 },
 "respekt": {
 "n": "Респект",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#f8c300",
+"pi": "#141414",
+"font": "Exo 2",
+"up": true,
+"lt": "Респект",
+"lb": "#ffffff",
+"hero": "b/respekt-hero.jpg"
+}
 },
 "korteks": {
 "n": "Кортекс+",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#fec30d",
+"pi": "#141414",
+"font": "Montserrat",
+"up": true,
+"lt": "Кортекс+",
+"lb": "#ffffff",
+"hero": "b/korteks-hero.jpg"
+}
 },
 "vershina-group": {
 "n": "Vershina Group",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#cc231f",
+"pi": "#ffffff",
+"font": "Unbounded",
+"up": true,
+"logo": "b/vershina-group-logo.svg",
+"lb": "#1b1d21",
+"hero": "b/vershina-group-hero.jpg",
+"dark": true
+}
 },
 "energostroyspektr": {
 "n": "Энергостройспектр",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#b47830",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Энергостройспектр",
+"lb": "#ffffff",
+"hero": "b/energostroyspektr-hero.jpg"
+}
 },
 "satiris-k": {
 "n": "Сатирис-К",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ff0000",
+"pi": "#ffffff",
+"font": "Marmelad",
+"logo": "b/satiris-k-logo.png",
+"lb": "#ffffff",
+"hero": "b/satiris-k-hero.jpg"
+}
 },
 "nash-dom": {
 "n": "Наш Дом",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#cb7316",
+"pi": "#ffffff",
+"h": "#363636",
+"font": "Manrope",
+"logo": "b/nash-dom-logo.png",
+"lb": "#ffffff",
+"hero": "b/nash-dom-hero.jpg"
+}
 },
 "big-studiya": {
 "n": "БиГ Студия",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#e4ccb4",
+"pi": "#141414",
+"h": "#151513",
+"font": "Inter",
+"lt": "БиГ Студия",
+"lb": "#ffffff",
+"hero": "b/big-studiya-hero.jpg"
+}
 },
 "vipstroyservis": {
 "n": "Випстройсервис",
@@ -337,15 +646,40 @@ window.COMPANIES = {
 },
 "sokora": {
 "n": "Сокора",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#d6ff46",
+"pi": "#141414",
+"font": "Manrope",
+"logo": "b/sokora-logo.png",
+"lb": "#4f4d4b",
+"hero": "b/sokora-hero.jpg"
+}
 },
 "st-resurs": {
 "n": "Ст-ресурс",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#06492c",
+"pi": "#ffffff",
+"h": "#292929",
+"font": "Manrope",
+"logo": "b/st-resurs-logo.png",
+"lb": "#ffffff",
+"hero": "b/st-resurs-hero.jpg"
+}
 },
 "grand-striver": {
 "n": "Гранд Стривер",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#240c30",
+"pi": "#ffffff",
+"font": "Montserrat",
+"lb": "#ffffff",
+"hero": "b/grand-striver-hero.jpg",
+"lt": "Гранд Стривер"
+}
 },
 "remont": {
 "n": "Ваша компания",
@@ -353,15 +687,42 @@ window.COMPANIES = {
 },
 "status": {
 "n": "Статус",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#1663a2",
+"pi": "#ffffff",
+"h": "#131a45",
+"font": "Inter",
+"logo": "b/status-logo.png",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #1b364c)"
+}
 },
 "stroysitigrup": {
 "n": "СтройСитиГруп",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#ffd744",
+"pi": "#141414",
+"font": "Manrope",
+"up": true,
+"logo": "b/stroysitigrup-logo.png",
+"lb": "#1b1d21",
+"hero": "b/stroysitigrup-hero.jpg",
+"dark": true
+}
 },
 "domostroy": {
 "n": "Домострой",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/domostroy-logo.svg",
+"lb": "#ffffff",
+"hero": "b/domostroy-hero.jpg"
+}
 },
 "komfortnyy-dom": {
 "n": "Комфортный дом",
@@ -369,15 +730,42 @@ window.COMPANIES = {
 },
 "stk-mig": {
 "n": "СТК Миг",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#bfa67a",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/stk-mig-logo.png",
+"lb": "#596067",
+"hb": "linear-gradient(135deg, #1f2125, #574e3e)"
+}
 },
 "uyut": {
 "n": "Уют",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/uyut-logo.png",
+"lb": "#ffffff",
+"hero": "b/uyut-hero.jpg"
+}
 },
 "zolotoy-vek": {
 "n": "Золотой Век",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#cca878",
+"pi": "#ffffff",
+"font": "Open Sans",
+"up": true,
+"lb": "#ffffff",
+"hero": "b/zolotoy-vek-hero.jpg",
+"lt": "Золотой Век"
+}
 },
 "nika-stroy": {
 "n": "Ника-Строй",
@@ -385,15 +773,42 @@ window.COMPANIES = {
 },
 "studiya-dizayna-1": {
 "n": "Студия дизайна № 1",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#30180c",
+"pi": "#ffffff",
+"h": "#080808",
+"font": "Manrope",
+"lb": "#ffffff",
+"hero": "b/studiya-dizayna-1-hero.jpg",
+"dark": true,
+"lt": "Студия дизайна № 1"
+}
 },
 "yug-stroy-remont": {
 "n": "Юг-Строй Ремонт",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#ed1d26",
+"pi": "#ffffff",
+"font": "Inter",
+"logo": "b/yug-stroy-remont-logo.svg",
+"lb": "#ffffff",
+"hero": "b/yug-stroy-remont-hero.jpg"
+}
 },
 "interriya": {
 "n": "Интеррия",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#ff5e34",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/interriya-logo.svg",
+"lb": "#ffffff",
+"hero": "b/interriya-hero.jpg"
+}
 },
 "novodom": {
 "n": "Новодом",
@@ -401,7 +816,16 @@ window.COMPANIES = {
 },
 "bauwork": {
 "n": "Bauwork",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#f09c18",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/bauwork-logo.svg",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #684a1c)"
+}
 },
 "artys": {
 "n": "Artys",
@@ -409,7 +833,16 @@ window.COMPANIES = {
 },
 "istoriya-stroitelstva": {
 "n": "История Строительства",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#3c180c",
+"pi": "#ffffff",
+"font": "Roboto",
+"up": true,
+"logo": "b/istoriya-stroitelstva-logo.png",
+"lb": "#ffffff",
+"hero": "b/istoriya-stroitelstva-hero.jpg"
+}
 },
 "novstroygrupp": {
 "n": "НовСтройГрупп",
@@ -417,7 +850,15 @@ window.COMPANIES = {
 },
 "pro-remont": {
 "n": "Pro Ремонт",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Pro Ремонт",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #202020)"
+}
 },
 "goldremkrd": {
 "n": "GoldRemKrd",
@@ -425,7 +866,17 @@ window.COMPANIES = {
 },
 "kvartirnyy-vopros": {
 "n": "Квартирный Вопрос",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#b4e400",
+"pi": "#141414",
+"h": "#3e3c38",
+"font": "Manrope",
+"up": true,
+"logo": "b/kvartirnyy-vopros-logo.svg",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #536314)"
+}
 },
 "oazis-grupp": {
 "n": "Оазис групп",
@@ -433,7 +884,15 @@ window.COMPANIES = {
 },
 "a-stroy": {
 "n": "А-Строй",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#5a88ad",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/a-stroy-logo.png",
+"lb": "#ffffff",
+"hero": "b/a-stroy-hero.jpg"
+}
 },
 "jectart": {
 "n": "Jectart",
@@ -441,7 +900,16 @@ window.COMPANIES = {
 },
 "mayhom": {
 "n": "МайХом",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#ffde40",
+"pi": "#141414",
+"font": "Montserrat",
+"logo": "b/mayhom-logo.png",
+"lb": "#ffffff",
+"hero": "b/mayhom-hero.jpg",
+"dark": true
+}
 },
 "pervyy-kontur": {
 "n": "Первый контур",
@@ -449,7 +917,15 @@ window.COMPANIES = {
 },
 "vodoley": {
 "n": "Водолей",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/vodoley-logo.png",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #202020)"
+}
 },
 "interriya-krd": {
 "n": "Интеррия",
@@ -457,7 +933,16 @@ window.COMPANIES = {
 },
 "navigator": {
 "n": "Навигатор",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/navigator-logo.svg",
+"lb": "#1b1d21",
+"hero": "b/navigator-hero.jpg"
+}
 },
 "pkf-stim": {
 "n": "ПКФ Стим",
@@ -465,7 +950,17 @@ window.COMPANIES = {
 },
 "garkus": {
 "n": "Гаркус",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#f99420",
+"pi": "#ffffff",
+"h": "#333333",
+"font": "Manrope",
+"up": true,
+"logo": "b/garkus-logo.png",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #6b471f)"
+}
 },
 "elitstroy": {
 "n": "Элитстрой",
@@ -481,11 +976,29 @@ window.COMPANIES = {
 },
 "intererstroyplyus": {
 "n": "ИнтерьерСтройПлюс",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ff6600",
+"pi": "#ffffff",
+"h": "#333333",
+"font": "Roboto",
+"logo": "b/intererstroyplyus-logo.png",
+"lb": "#ffffff",
+"hero": "b/intererstroyplyus-hero.jpg"
+}
 },
 "rpk-72": {
 "n": "Рпк-72",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#ffd014",
+"pi": "#141414",
+"font": "Montserrat",
+"logo": "b/rpk-72-logo.png",
+"lb": "#000000",
+"hero": "b/rpk-72-hero.jpg",
+"dark": true
+}
 },
 "vavilon-1": {
 "n": "Вавилон-1",
@@ -493,11 +1006,29 @@ window.COMPANIES = {
 },
 "kolorit": {
 "n": "Колорит",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#fbb331",
+"pi": "#141414",
+"font": "PT Sans",
+"up": true,
+"logo": "b/kolorit-logo.png",
+"lb": "#ffffff",
+"hero": "b/kolorit-hero.jpg"
+}
 },
 "stroyremgrupp": {
 "n": "СтройРемГрупп",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#003060",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/stroyremgrupp-logo.png",
+"lb": "#ffffff",
+"hero": "b/stroyremgrupp-hero.jpg"
+}
 },
 "fortuna-snab": {
 "n": "Фортуна СНаБ",
@@ -505,11 +1036,27 @@ window.COMPANIES = {
 },
 "tochmash-ural-plyus": {
 "n": "Точмаш Урал плюс",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ff3831",
+"pi": "#ffffff",
+"font": "Roboto",
+"lt": "Точмаш Урал плюс",
+"lb": "#ffffff",
+"hero": "b/tochmash-ural-plyus-hero.jpg"
+}
 },
 "remont-kvartir": {
 "n": "Ремонт квартир",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#000000",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Ремонт квартир",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #141414)"
+}
 },
 "ekostroy": {
 "n": "Экострой",
@@ -517,7 +1064,16 @@ window.COMPANIES = {
 },
 "lavr": {
 "n": "Лавр",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ff6f4d",
+"pi": "#ffffff",
+"font": "Exo 2",
+"up": true,
+"logo": "b/lavr-logo.png",
+"lb": "#ffffff",
+"hero": "b/lavr-hero.jpg"
+}
 },
 "chernika": {
 "n": "Chernika",
@@ -525,7 +1081,16 @@ window.COMPANIES = {
 },
 "liderstroy": {
 "n": "ЛидерСтрой",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ff9800",
+"pi": "#ffffff",
+"h": "#212529",
+"font": "Rubik",
+"logo": "b/liderstroy-logo.png",
+"lb": "#ffffff",
+"hero": "b/liderstroy-hero.jpg"
+}
 },
 "vremya-remonta": {
 "n": "Время ремонта",
@@ -533,7 +1098,16 @@ window.COMPANIES = {
 },
 "masterovoy": {
 "n": "Мастеровой",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#b4e4fc",
+"pi": "#141414",
+"h": "#0062ad",
+"font": "Roboto",
+"logo": "b/masterovoy-logo.png",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #53636c)"
+}
 },
 "iskusstvo-remonta": {
 "n": "Искусство ремонта",
@@ -541,7 +1115,15 @@ window.COMPANIES = {
 },
 "remont-eto-prosto": {
 "n": "Ремонт - это просто",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/remont-eto-prosto-logo.png",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #202020)"
+}
 },
 "massiv-72": {
 "n": "Массив-72",
@@ -549,7 +1131,16 @@ window.COMPANIES = {
 },
 "moydom96": {
 "n": "Мойдом96",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#252a41",
+"pi": "#ffffff",
+"h": "#252a41",
+"font": "Manrope",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #21222a)",
+"lt": "Мойдом96"
+}
 },
 "proremont72": {
 "n": "ПроРемонт72",
@@ -557,7 +1148,16 @@ window.COMPANIES = {
 },
 "stroy-grupp": {
 "n": "Строй Групп",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ae0000",
+"pi": "#ffffff",
+"font": "Lato",
+"up": true,
+"logo": "b/stroy-grupp-logo.png",
+"lb": "#1b1d21",
+"hero": "b/stroy-grupp-hero.jpg"
+}
 },
 "rio": {
 "n": "РИО",
