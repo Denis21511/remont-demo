@@ -2,27 +2,82 @@
 window.COMPANIES = {
 "ledome": {
 "n": "LeDome",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#1f1f1f",
+"lb": "#1b1b1b",
+"logo": "b/ledome-logo.png",
+"hero": "b/ledome-hero.jpg",
+"font": "Manrope",
+"up": true
+}
 },
 "indizz": {
 "n": "Indizz",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#17a8bf",
+"pi": "#ffffff",
+"lb": "#1d2226",
+"logo": "b/indizz-logo.svg",
+"hero": "b/indizz-hero.jpg",
+"font": "Montserrat",
+"up": true,
+"dark": true
+}
 },
 "72-kvadrata": {
 "n": "72 Квадрата",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#272727",
+"lb": "#ffffff",
+"logo": "b/72-kvadrata-logo.png",
+"hero": "b/72-kvadrata-hero.jpg",
+"font": "Play"
+}
 },
 "altais-ural": {
 "n": "Альтаис Урал",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#ffc801",
+"pi": "#1a1a1a",
+"lb": "#1c1c1c",
+"logo": "b/altais-ural-logo.svg",
+"hero": "b/altais-ural-hero.jpg",
+"font": "Manrope",
+"dark": true
+}
 },
 "lihmer": {
 "n": "Lihmer",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ffc803",
+"pi": "#1a1a1a",
+"h": "#3a393b",
+"lb": "#3a393b",
+"li": "#ffffff",
+"lt": "LIHMER *2.0*",
+"hero": "b/lihmer-hero.jpg",
+"font": "Manrope"
+}
 },
 "krd-prodecor": {
 "n": "KRD PRODECOR",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#b8956a",
+"pi": "#ffffff",
+"lb": "#111111",
+"li": "#ffffff",
+"logo": "b/krd-prodecor-logo.png",
+"lt": "KRD PRODECOR",
+"hero": "b/krd-prodecor-hero.jpg",
+"font": "Inter",
+"dark": true
+}
 },
 "rawstroy": {
 "n": "Rawстрой",
@@ -30,35 +85,107 @@ window.COMPANIES = {
 },
 "russkiy-osobnyak": {
 "n": "Русский особняк",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#323131",
+"lb": "#ffffff",
+"lt": "Русский особняк",
+"hb": "linear-gradient(135deg, #3b3632, #6b625a)",
+"font": "Raleway"
+}
 },
 "millimetrika": {
 "n": "Millimetrika",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#2b2b2b",
+"lb": "#1f1f1f",
+"logo": "b/millimetrika-logo.png",
+"hero": "b/millimetrika-hero.jpg",
+"font": "Jost",
+"up": true
+}
 },
 "metavo": {
 "n": "MetaVo",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#ff6b00",
+"pi": "#ffffff",
+"lb": "#1c1d22",
+"li": "#ffffff",
+"lt": "META*VO*",
+"hb": "linear-gradient(135deg, #1c1d22, #2b2c35)",
+"font": "Unbounded",
+"dark": true
+}
 },
 "azimut-stroy": {
 "n": "Азимут Строй",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#cf3521",
+"pi": "#ffffff",
+"h": "#003655",
+"lb": "#ffffff",
+"logo": "b/azimut-stroy-logo.png",
+"hero": "b/azimut-stroy-hero.jpg",
+"font": "Montserrat",
+"up": true
+}
 },
 "stroy-pomosch-rf": {
 "n": "Строй-помощь.рф",
-"c": "Челябинск"
+"c": "Челябинск",
+"t": {
+"p": "#4b3f7f",
+"pi": "#ffffff",
+"lb": "#ffffff",
+"logo": "b/stroy-pomosch-rf-logo.png",
+"hero": "b/stroy-pomosch-rf-hero.jpg",
+"font": "Montserrat"
+}
 },
 "refectio": {
 "n": "Refectio",
-"c": "Екатеринбург"
+"c": "Екатеринбург",
+"t": {
+"p": "#ff822e",
+"pi": "#ffffff",
+"h": "#111111",
+"lb": "#ffffff",
+"logo": "b/refectio-logo.png",
+"hero": "b/refectio-hero.jpg",
+"font": "Manrope"
+}
 },
 "orex": {
 "n": "Orex",
-"c": "Краснодар"
+"c": "Краснодар",
+"t": {
+"p": "#40e0d0",
+"pi": "#12302d",
+"h": "#2d3133",
+"lb": "#ffffff",
+"li": "#2d3133",
+"lt": "OREX",
+"hero": "b/orex-hero.jpg",
+"font": "Montserrat"
+}
 },
 "kak-nado": {
 "n": "Как Надо",
-"c": "Тюмень"
+"c": "Тюмень",
+"t": {
+"p": "#fccd10",
+"pi": "#111111",
+"lb": "#000000",
+"logo": "b/kak-nado-logo.png",
+"hb": "linear-gradient(135deg, #1f1e1c, #3a3833)",
+"font": "Montserrat",
+"up": true,
+"dark": true
+}
 },
 "estetika-remonta": {
 "n": "Эстетика Ремонта",

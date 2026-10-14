@@ -167,6 +167,7 @@ const Store = {
     // короткая ссылка из рассылки: ?k=код → название и город из js/companies.js
     const co = (window.COMPANIES || {})[(q.get('k') || '').toLowerCase()];
     if (co) { this.s.company = co.n; this.s.city = co.c || ''; }
+    Brand.apply(co && co.t);
     if (q.get('n')) this.s.company = q.get('n').trim().slice(0, 40) || this.s.company;
     if (q.get('c')) this.s.city = q.get('c').trim().slice(0, 30) || this.s.city;
     this.scan();
@@ -228,6 +229,40 @@ const Store = {
   timeShift(ms) { this.s.shift = (this.s.shift || 0) + ms; const n = this.scan(); this.save(); return n; },
 };
 
+/* ---------- фирменный стиль компании: цвета, шрифт, логотип, фото с её сайта ---------- */
+const Brand = {
+  t: null,
+  hex(c) { const n = parseInt(c.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; },
+  mix(a, b, k) { const x = this.hex(a), y = this.hex(b); return '#' + x.map((v, i) => Math.round(v * (1 - k) + y[i] * k).toString(16).padStart(2, '0')).join(''); },
+  lum(c) { const [r, g, b] = this.hex(c).map(v => { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); }); return .2126 * r + .7152 * g + .0722 * b; },
+  apply(t) {
+    this.t = t || null;
+    if (!t) return;
+    const p = t.p, pi = t.pi || (this.lum(p) > .45 ? '#141414' : '#ffffff');
+    const head = t.h || (this.lum(p) < .2 ? p : '#1b1d21');
+    const fh = t.font ? `'${t.font}', var(--font)` : 'var(--font)';
+    const common = `--navy:${p};--on-navy:${pi};--blue:${p};--font-h:${fh};--qbar:#15181c;--logo-bg:${t.lb || '#ffffff'};--logo-ink:${t.li || (this.lum(t.lb || '#ffffff') > .5 ? '#1b1d21' : '#ffffff')};`
+      // путь к фото — абсолютный: относительный в переменной браузер считает от css/app.css
+      + (t.hero ? `--hero:url("${new URL(t.hero, location.href).href}");` : `--hero:${t.hb || '#1c1c1c'};`);
+    const css = `:root{${common}--navy-2:${this.mix(p, '#000000', .12)};--blue-2:${this.lum(p) > .45 ? this.mix(p, '#000000', .45) : p};--blue-50:${this.mix(p, '#ffffff', .88)};--brand:${head};}`
+      + `:root[data-theme="dark"]{${common}--navy-2:${this.mix(p, '#ffffff', .12)};--blue-2:${this.lum(p) < .08 ? '#e6e6e6' : p};--blue-50:${this.mix(p, '#141c27', .8)};--brand:#f1f3f5;}`
+      + (this.lum(p) < .08 ? `:root[data-theme="dark"]{--navy:#e9e9e9;--on-navy:#141414;--blue:#bdbdbd;}` : '');
+    let st = $('#brand-css'); if (!st) { st = document.createElement('style'); st.id = 'brand-css'; document.head.appendChild(st); }
+    st.textContent = css;
+    if (t.font && !$('#brand-font')) {
+      const l = document.createElement('link'); l.id = 'brand-font'; l.rel = 'stylesheet';
+      l.href = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(t.font).replace(/%20/g, '+')}:wght@300;400;600;700;800&display=swap`;
+      document.head.appendChild(l);
+    }
+    document.documentElement.classList.toggle('is-up', !!t.up);
+    if (t.dark && !Theme.saved()) Theme.apply('dark');
+  },
+  /* логотип: картинка с сайта или название их шрифтом */
+  logo(cls = '') { const t = this.t; return t.logo ? `<img src="${esc(t.logo)}" alt="${esc(Store.s.company)}" class="${cls}">${t.lt ? `<span class="blogo">${esc(t.lt)}</span>` : ''}` : `<span class="blogo">${t.lt ? t.lt.replace(/\*(.+?)\*/g, '<i>$1</i>') : esc(Store.s.company)}</span>`; },
+  /* шапка «как на их сайте»: полоса с логотипом + фото первого экрана с заголовком */
+  hero(inner, note) { return `<div class="bwrap"><div class="bhead">${this.logo()}${note ? `<small>${note}</small>` : ''}</div><div class="bhero">${inner}</div></div>`; },
+};
+
 /* ---------- тема: как в телефоне, пока человек не выбрал сам ---------- */
 const Theme = {
   KEY: 'zayavki.theme',
@@ -286,9 +321,9 @@ const Views = {
   /* --- вводная для владельца: её показывают при визите --- */
   intro(v) {
     const s = Store.s, named = s.company !== DEF_CO;
+    const kicker = `<div class="kicker">${named ? `Демо для «${esc(s.company)}»` : 'Демо-версия'}${s.city ? ' · ' + esc(s.city) : ''}</div>`;
     v.innerHTML = `<section class="intro">
-      <div class="kicker">${named ? `Демо для «${esc(s.company)}»` : 'Демо-версия'}${s.city ? ' · ' + esc(s.city) : ''}</div>
-      <h1>Ни одна заявка<br>не потеряется</h1>
+      ${Brand.t ? Brand.hero(`${kicker}<h1 style="margin-top:14px">Ни одна заявка<br>не потеряется</h1>`) : `${kicker}<h1>Ни одна заявка<br>не потеряется</h1>`}
       <p class="lead">Клиент считает стоимость ремонта на вашем сайте или по ссылке из Авито, а вы сразу получаете заявку в Telegram. Дальше система сама напоминает, кому позвонить и что написать, пока клиент не ушёл к другой бригаде.</p>
       <div class="cta">
         <a class="btn btn--primary btn--lg" href="#/quiz">${icon('calc')}Посмотреть глазами клиента</a>
@@ -518,8 +553,9 @@ const Quiz = {
       </form>`;
     v.innerHTML = `<div class="qbar"><span>${icon('user', 16)}Так клиент видит расчёт на вашем сайте</span><div class="qbar__r">${themeBtn()}<a href="#/board" class="link">Выйти ${icon('x', 14)}</a></div></div>
       <div class="quiz">
-        <div class="quiz__brand"><b>${esc(co)}</b><small>${s.city ? esc(s.city) + ' · ' : ''}ремонт и отделка</small></div>
-        ${st.done ? '' : `<div class="quiz__top"><h1>Рассчитайте стоимость ремонта за 1 минуту</h1><div class="prog"><i style="width:${(st.step + 1) / steps.length * 100}%"></i></div><small class="muted">Шаг ${st.step + 1} из ${steps.length}${st.step ? ` · <button class="link" id="back">${icon('left', 14)}назад</button>` : ''}</small></div>`}
+        ${Brand.t ? Brand.hero(`<h1>Рассчитайте стоимость ремонта за 1 минуту</h1><p>Ответьте на 4 вопроса и сразу увидите ориентир по цене работ</p>`, `${s.city ? esc(s.city) + '<br>' : ''}ремонт и отделка`)
+          : `<div class="quiz__brand"><b>${esc(co)}</b><small>${s.city ? esc(s.city) + ' · ' : ''}ремонт и отделка</small></div>`}
+        ${st.done ? '' : `<div class="quiz__top">${Brand.t ? '' : '<h1>Рассчитайте стоимость ремонта за 1 минуту</h1>'}<div class="prog"><i style="width:${(st.step + 1) / steps.length * 100}%"></i></div><small class="muted">Шаг ${st.step + 1} из ${steps.length}${st.step ? ` · <button class="link" id="back">${icon('left', 14)}назад</button>` : ''}</small></div>`}
         <div class="quiz__card">${body}</div>
         ${st.done ? '' : `<div class="quiz__gift">${icon('gift', 20)}<span>Выезд на замер и подробная смета бесплатно</span></div>`}
       </div>`;
@@ -589,7 +625,8 @@ const App = {
     const s = Store.s, on = page === 'lead' ? 'board' : page;
     document.title = `${s.company} · Заявки`;
     root.className = '';
-    root.innerHTML = `<header class="top"><a href="#/" class="logo"><span class="logo__m"></span>${esc(s.company)}<small>Заявки</small></a>
+    const mark = Brand.t && Brand.t.logo ? `<span class="logo__img"><img src="${esc(Brand.t.logo)}" alt=""></span>` : '<span class="logo__m"></span>';
+    root.innerHTML = `<header class="top"><a href="#/" class="logo">${mark}${esc(s.company)}<small>Заявки</small></a>
       <div class="top__r"><nav class="nav">${NAV.map(([k, h, ic, t]) => `<a href="${h}" class="${on === k ? 'is-on' : ''}">${icon(ic, 20)}<span>${t}</span>${k === 'tg' ? '<em class="badge" id="tgbadge"></em>' : ''}</a>`).join('')}</nav>${themeBtn()}</div></header>
       <main id="view"></main>`;
     const v = $('#view');
