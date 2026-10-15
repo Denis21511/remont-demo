@@ -559,7 +559,7 @@ const Quiz = {
           : `<div class="quiz__brand"><b>${esc(co)}</b><small>${s.city ? esc(s.city) + ' · ' : ''}ремонт и отделка</small></div>`}
         ${st.done ? '' : `<div class="quiz__top">${Brand.t ? '' : '<h1>Рассчитайте стоимость ремонта за 1 минуту</h1>'}<div class="prog"><i style="width:${(st.step + 1) / steps.length * 100}%"></i></div><small class="muted">Шаг ${st.step + 1} из ${steps.length}${st.step ? ` · <button class="link" id="back">${icon('left', 14)}назад</button>` : ''}</small></div>`}
         <div class="quiz__card">${body}</div>
-        ${st.done ? '' : `<div class="quiz__gift">${icon('gift', 20)}<span>Выезд на замер и подробная смета бесплатно</span></div>`}
+        ${st.done ? '' : `<div class="quiz__gift">${icon('gift', 20)}<span>Выезд на замер и смета бесплатно</span></div>`}
       </div>`;
     this.bind(v);
   },
