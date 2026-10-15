@@ -1229,7 +1229,16 @@ window.COMPANIES = {
 },
 "dc-group": {
 "n": "Dc Group",
-"c": "Казань"
+"c": "Казань",
+"t": {
+"p": "#ffd800",
+"pi": "#141414",
+"font": "Manrope",
+"up": true,
+"logo": "b/dc-group-logo.png",
+"lb": "#ffffff",
+"hero": "b/dc-group-hero.jpg"
+}
 },
 "finishremont": {
 "n": "Finiшремонт",
@@ -1258,7 +1267,15 @@ window.COMPANIES = {
 },
 "dizayn-studiya-lunevyh": {
 "n": "Дизайн студия Лунёвых",
-"c": "Сургут"
+"c": "Сургут",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/dizayn-studiya-lunevyh-logo.png",
+"lb": "#1b1d21",
+"hero": "b/dizayn-studiya-lunevyh-hero.jpg"
+}
 },
 "evdesign": {
 "n": "EVdesign",
@@ -1396,7 +1413,16 @@ window.COMPANIES = {
 },
 "grinhaus": {
 "n": "Гринхаус",
-"c": "Новосибирск"
+"c": "Новосибирск",
+"t": {
+"p": "#d0693e",
+"pi": "#ffffff",
+"h": "#14201e",
+"font": "Manrope",
+"logo": "b/grinhaus-logo.svg",
+"lb": "#1b1d21",
+"hb": "linear-gradient(135deg, #1f2125, #5c3829)"
+}
 },
 "yurtek": {
 "n": "Юртек",
@@ -1412,7 +1438,16 @@ window.COMPANIES = {
 },
 "za-komfortom": {
 "n": "За Комфортом",
-"c": "Уфа"
+"c": "Уфа",
+"t": {
+"p": "#f8aa37",
+"pi": "#141414",
+"font": "Montserrat",
+"lt": "За Комфортом",
+"lb": "#ffffff",
+"hero": "b/za-komfortom-hero.jpg",
+"dark": true
+}
 },
 "zevs-stroy": {
 "n": "Зевс-строй",
@@ -1467,7 +1502,16 @@ window.COMPANIES = {
 },
 "dlya-tebya": {
 "n": "Для Тебя",
-"c": "Новосибирск"
+"c": "Новосибирск",
+"t": {
+"p": "#400d09",
+"pi": "#ffffff",
+"h": "#400d09",
+"font": "Manrope",
+"lt": "Для Тебя",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #576c6c)"
+}
 },
 "partner-vashego-remonta": {
 "n": "Партнер вашего ремонта",
@@ -1484,7 +1528,16 @@ window.COMPANIES = {
 },
 "stilnyy-dom": {
 "n": "Стильный Дом",
-"c": "Казань"
+"c": "Казань",
+"t": {
+"p": "#30180c",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/stilnyy-dom-logo.png",
+"lb": "#1b1d21",
+"hb": "linear-gradient(135deg, #1f2125, #241c18)"
+}
 },
 "isk-vertikal": {
 "n": "Иск Вертикаль",
@@ -1726,7 +1779,16 @@ window.COMPANIES = {
 },
 "atoll": {
 "n": "Атолл",
-"c": "Казань"
+"c": "Казань",
+"t": {
+"p": "#bb9c69",
+"pi": "#ffffff",
+"font": "Manrope",
+"lb": "#ffffff",
+"hero": "b/atoll-hero.jpg",
+"dark": true,
+"lt": "Атолл"
+}
 },
 "gezha-group": {
 "n": "Gezha Group",
@@ -1834,11 +1896,29 @@ window.COMPANIES = {
 },
 "mayd": {
 "n": "Майд",
-"c": "Казань"
+"c": "Казань",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/mayd-logo.svg",
+"lb": "#1b1d21",
+"hero": "b/mayd-hero.jpg",
+"dark": true
+}
 },
 "avantstroy": {
 "n": "Авантстрой",
-"c": "Новосибирск"
+"c": "Новосибирск",
+"t": {
+"p": "#f6bf1f",
+"pi": "#141414",
+"font": "Open Sans",
+"logo": "b/avantstroy-logo.png",
+"lb": "#ffffff",
+"hero": "b/avantstroy-hero.jpg"
+}
 },
 "masterskaya-remonta": {
 "n": "Мастерская ремонта",
@@ -1970,7 +2050,15 @@ window.COMPANIES = {
 },
 "chestnyy-stroitel": {
 "n": "Честный строитель",
-"c": "Казань"
+"c": "Казань",
+"t": {
+"p": "#3d8b2f",
+"pi": "#ffffff",
+"font": "Montserrat",
+"logo": "b/chestnyy-stroitel-logo.png",
+"lb": "#ffffff",
+"hero": "b/chestnyy-stroitel-hero.jpg"
+}
 },
 "domstroy": {
 "n": "ДомСтрой",
@@ -1986,7 +2074,17 @@ window.COMPANIES = {
 },
 "remont-perm": {
 "n": "Ремонт Пермь",
-"c": "Пермь"
+"c": "Пермь",
+"t": {
+"p": "#006a96",
+"pi": "#ffffff",
+"h": "#4b4b4b",
+"font": "Manrope",
+"up": true,
+"logo": "b/remont-perm-logo.png",
+"lb": "#1b1d21",
+"hero": "b/remont-perm-hero.jpg"
+}
 },
 "ufaremont": {
 "n": "УфаРемонт",
@@ -2077,7 +2175,16 @@ window.COMPANIES = {
 },
 "mastersiti": {
 "n": "МастерСити",
-"c": "Новосибирск"
+"c": "Новосибирск",
+"t": {
+"p": "#fbd232",
+"pi": "#141414",
+"h": "#1d2736",
+"font": "Montserrat",
+"logo": "b/mastersiti-logo.png",
+"lb": "#ffffff",
+"hero": "b/mastersiti-hero.jpg"
+}
 },
 "minimalisty-interera": {
 "n": "Минималисты Интерьера",
@@ -2094,7 +2201,17 @@ window.COMPANIES = {
 },
 "novaya-era": {
 "n": "Новая Эра",
-"c": "Новосибирск"
+"c": "Новосибирск",
+"t": {
+"p": "#d6b97b",
+"pi": "#141414",
+"h": "#222222",
+"font": "Manrope",
+"lt": "Новая Эра",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #5f543f)",
+"dark": true
+}
 },
 "rusardo": {
 "n": "Русардо",
