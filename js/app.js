@@ -166,9 +166,7 @@ const Store = {
     const q = new URLSearchParams(location.search);
     this.s = saved && saved.v === 1 ? saved : seed();
     // короткая ссылка из рассылки: ?k=код → название и город из js/companies.js
-    // 15.10.2026: персональные демо с чужими названиями и логотипами отключены (претензия правообладателя).
-    // Ссылки ?k= из рассылки открывают общее демо «Цех Заявки».
-    const co = null;
+    const co = (window.COMPANIES || {})[(q.get('k') || '').toLowerCase()];
     if (co) { this.s.company = co.n; this.s.city = co.c || ''; }
     else if (!q.get('n')) { this.s.company = DEF_CO; this.s.city = ''; }   // общая ссылка: убрать название, оставшееся от чужой персональной
     Brand.apply(co && co.t);
