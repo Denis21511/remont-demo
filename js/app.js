@@ -53,7 +53,8 @@ const ICONS = {
 const icon = (n, s = 20) => `<svg class="ic ic-${n}" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[n]}</svg>`;
 
 /* ---------- виды ремонта и цены за работу (средние по Уралу, без материалов) ---------- */
-const DEF_CO = 'Ваша компания';
+const DEF_CO = 'Цех Заявки';          // общая ссылка без ?k= и ?n= — никакого названия компании
+const named = () => Store.s.company !== DEF_CO;
 const TIERS = {
   eco: { label: 'Косметический', sub: 'обои, покраска, ламинат', m2: 5500, bath: [140000, 200000] },
   mid: { label: 'Капитальный', sub: 'стены, электрика, сантехника', m2: 11000, bath: [230000, 330000] },
@@ -165,8 +166,11 @@ const Store = {
     const q = new URLSearchParams(location.search);
     this.s = saved && saved.v === 1 ? saved : seed();
     // короткая ссылка из рассылки: ?k=код → название и город из js/companies.js
-    const co = (window.COMPANIES || {})[(q.get('k') || '').toLowerCase()];
+    // 15.10.2026: персональные демо с чужими названиями и логотипами отключены (претензия правообладателя).
+    // Ссылки ?k= из рассылки открывают общее демо «Цех Заявки».
+    const co = null;
     if (co) { this.s.company = co.n; this.s.city = co.c || ''; }
+    else if (!q.get('n')) { this.s.company = DEF_CO; this.s.city = ''; }   // общая ссылка: убрать название, оставшееся от чужой персональной
     Brand.apply(co && co.t);
     if (q.get('n')) this.s.company = q.get('n').trim().slice(0, 40) || this.s.company;
     if (q.get('c')) this.s.city = q.get('c').trim().slice(0, 30) || this.s.city;
@@ -442,7 +446,7 @@ const Views = {
       <p class="muted small">Так выглядят уведомления в Telegram на телефоне владельца. Чтобы увидеть напоминания, перемотайте время вперёд:</p>
       <div class="chips chips--time"><button class="chip" data-shift="${20 * MIN}">${icon('forward', 14)}+20 минут</button><button class="chip" data-shift="${DAY}">${icon('forward', 14)}+1 день</button><button class="chip" data-shift="${3 * DAY}">${icon('forward', 14)}+3 дня</button><button class="chip" id="weekly">📊 Недельный отчёт</button></div>
       <div class="tg">
-        <div class="tg__head"><span class="ava ava--bot">${icon('send', 16)}</span><div><b>${esc(s.company)} · Заявки</b><small>бот</small></div></div>
+        <div class="tg__head"><span class="ava ava--bot">${icon('send', 16)}</span><div><b>${named() ? esc(s.company) + ' · Заявки' : 'Цех Заявки'}</b><small>бот</small></div></div>
         <div class="tg__list" id="tglist">${msgs}</div>
       </div>
     </div>`;
@@ -529,7 +533,7 @@ const Quiz = {
   view(v) {
     if (!this.st) this.reset();
     const st = this.st, q = st.q, steps = this.steps(), cur = steps[st.step], s = Store.s;
-    const co = s.company === DEF_CO ? 'Ремонт квартир' : s.company;
+    const co = s.company;
     let body = '';
     if (st.done) body = this.result();
     else if (cur === 'cat') body = `<h2>Что нужно отремонтировать?</h2><div class="qgrid qgrid--2">${Object.entries(OBJ).map(([k, o]) => this.opt('cat', k, o.label, k === 'bath' ? 'плитка, сантехника, потолок' : k === 'newflat' ? 'черновая или white box' : k === 'oldflat' ? 'со сносом старой отделки' : 'внутренняя отделка', this.art[k])).join('')}</div>`;
@@ -623,10 +627,10 @@ const App = {
     }
     Quiz.st = null;
     const s = Store.s, on = page === 'lead' ? 'board' : page;
-    document.title = `${s.company} · Заявки`;
+    document.title = named() ? `${s.company} · Заявки` : 'Цех Заявки — демо';
     root.className = '';
     const mark = Brand.t && Brand.t.logo ? `<span class="logo__img"><img src="${esc(Brand.t.logo)}" alt=""></span>` : '<span class="logo__m"></span>';
-    root.innerHTML = `<header class="top"><a href="#/" class="logo">${mark}${esc(s.company)}<small>Заявки</small></a>
+    root.innerHTML = `<header class="top"><a href="#/" class="logo">${mark}${named() ? esc(s.company) + '<small>Заявки</small>' : 'Цех<small>Заявки</small>'}</a>
       <div class="top__r"><nav class="nav">${NAV.map(([k, h, ic, t]) => `<a href="${h}" class="${on === k ? 'is-on' : ''}">${icon(ic, 20)}<span>${t}</span>${k === 'tg' ? '<em class="badge" id="tgbadge"></em>' : ''}</a>`).join('')}</nav>${themeBtn()}</div></header>
       <main id="view"></main>`;
     const v = $('#view');
