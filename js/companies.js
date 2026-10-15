@@ -1,4 +1,4 @@
-/* коды коротких ссылок из рассылки: ?k=код → название и город. Генерирует outreach/remont-leads/build.py */
+/* коды коротких ссылок из рассылки: ?k=код → название и город. Генерирует outreach/remont-leads/build.py и batch2/build2.py */
 window.COMPANIES = {
 "ledome": {
 "n": "LeDome",
@@ -1226,5 +1226,1001 @@ window.COMPANIES = {
 "etno-haus": {
 "n": "Этно Хаус",
 "c": "Екатеринбург"
+},
+"dc-group": {
+"n": "Dc Group",
+"c": "Казань"
+},
+"finishremont": {
+"n": "Finiшремонт",
+"c": "Новосибирск",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/finishremont-logo.svg",
+"lb": "#ffffff",
+"hero": "b/finishremont-hero.jpg"
+}
+},
+"prorab-59": {
+"n": "Прораб-59",
+"c": "Пермь",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Прораб-59",
+"lb": "#ffffff",
+"hero": "b/prorab-59-hero.jpg",
+"dark": true
+}
+},
+"dizayn-studiya-lunevyh": {
+"n": "Дизайн студия Лунёвых",
+"c": "Сургут"
+},
+"evdesign": {
+"n": "EVdesign",
+"c": "Уфа",
+"t": {
+"p": "#1a6875",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"lt": "EVdesign",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #1d383d)"
+}
+},
+"meliorem": {
+"n": "Meliorem",
+"c": "Казань",
+"t": {
+"p": "#3c240c",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/meliorem-logo.png",
+"lb": "#1b1d21",
+"hero": "b/meliorem-hero.jpg"
+}
+},
+"time-design": {
+"n": "Time Design",
+"c": "Новосибирск",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/time-design-logo.png",
+"lb": "#1b1d21",
+"hero": "b/time-design-hero.jpg",
+"dark": true
+}
+},
+"stroitelnaya-kompaniya": {
+"n": "Строительная компания",
+"c": "Пермь",
+"t": {
+"p": "#f09054",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/stroitelnaya-kompaniya-logo.png",
+"lb": "#ffffff",
+"hero": "b/stroitelnaya-kompaniya-hero.jpg"
+}
+},
+"masterok86-rf": {
+"n": "Мастерок86.рф",
+"c": "Сургут",
+"t": {
+"p": "#b48c64",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/masterok86-rf-logo.png",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #534537)"
+}
+},
+"renovation-club": {
+"n": "Renovation Club",
+"c": "Уфа"
+},
+"rem-kazan": {
+"n": "Rem-kazan",
+"c": "Казань",
+"t": {
+"p": "#002d9c",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/rem-kazan-logo.png",
+"lb": "#1b1d21",
+"hero": "b/rem-kazan-hero.jpg"
+}
+},
+"abis": {
+"n": "Абис",
+"c": "Новосибирск",
+"t": {
+"p": "#78000c",
+"pi": "#ffffff",
+"font": "Montserrat",
+"up": true,
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #3e1418)",
+"lt": "Абис"
+}
+},
+"profistroy": {
+"n": "ПрофиСтрой",
+"c": "Сургут",
+"t": {
+"p": "#1e2542",
+"pi": "#ffffff",
+"font": "Oswald",
+"up": true,
+"logo": "b/profistroy-logo.png",
+"lb": "#1b1d21",
+"hero": "b/profistroy-hero.jpg",
+"dark": true
+}
+},
+"dom-s-umom": {
+"n": "Дом с умом",
+"c": "Уфа",
+"t": {
+"p": "#0088cc",
+"pi": "#ffffff",
+"h": "#202020",
+"font": "Roboto",
+"up": true,
+"logo": "b/dom-s-umom-logo.png",
+"lb": "#1b1d21",
+"hb": "linear-gradient(135deg, #1f2125, #14435b)",
+"dark": true
+}
+},
+"the-matur": {
+"n": "The Matur",
+"c": "Казань",
+"t": {
+"p": "#30180c",
+"pi": "#ffffff",
+"font": "Ubuntu",
+"logo": "b/the-matur-logo.png",
+"lb": "#6b6761",
+"hero": "b/the-matur-hero.jpg"
+}
+},
+"grinhaus": {
+"n": "Гринхаус",
+"c": "Новосибирск"
+},
+"yurtek": {
+"n": "Юртек",
+"c": "Сургут",
+"t": {
+"p": "#fad141",
+"pi": "#141414",
+"font": "Manrope",
+"logo": "b/yurtek-logo.svg",
+"lb": "#1b1d21",
+"hero": "b/yurtek-hero.jpg"
+}
+},
+"za-komfortom": {
+"n": "За Комфортом",
+"c": "Уфа"
+},
+"zevs-stroy": {
+"n": "Зевс-строй",
+"c": "Казань",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/zevs-stroy-logo.svg",
+"lb": "#1b1d21",
+"hero": "b/zevs-stroy-hero.jpg"
+}
+},
+"delo-mastera": {
+"n": "Дело мастера",
+"c": "Новосибирск",
+"t": {
+"p": "#c09054",
+"pi": "#ffffff",
+"font": "Roboto",
+"logo": "b/delo-mastera-logo.png",
+"lb": "#1b1d21",
+"hero": "b/delo-mastera-hero.jpg"
+}
+},
+"masterskaya-uyuta": {
+"n": "Мастерская уюта",
+"c": "Уфа",
+"t": {
+"p": "#c92729",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"lt": "Мастерская уюта",
+"lb": "#ffffff",
+"hero": "b/masterskaya-uyuta-hero.jpg"
+}
+},
+"krassula": {
+"n": "Крассула",
+"c": "Казань",
+"t": {
+"p": "#7884cc",
+"pi": "#ffffff",
+"font": "Roboto Condensed",
+"up": true,
+"lt": "Крассула",
+"lb": "#ffffff",
+"hero": "b/krassula-hero.jpg"
+}
+},
+"dlya-tebya": {
+"n": "Для Тебя",
+"c": "Новосибирск"
+},
+"partner-vashego-remonta": {
+"n": "Партнер вашего ремонта",
+"c": "Уфа",
+"t": {
+"p": "#00d8e4",
+"pi": "#141414",
+"font": "Montserrat",
+"logo": "b/partner-vashego-remonta-logo.svg",
+"lb": "#ffffff",
+"hero": "b/partner-vashego-remonta-hero.jpg",
+"dark": true
+}
+},
+"stilnyy-dom": {
+"n": "Стильный Дом",
+"c": "Казань"
+},
+"isk-vertikal": {
+"n": "Иск Вертикаль",
+"c": "Новосибирск"
+},
+"profiremont": {
+"n": "ПрофиРемонт",
+"c": "Уфа",
+"t": {
+"p": "#004fad",
+"pi": "#ffffff",
+"font": "Roboto",
+"logo": "b/profiremont-logo.png",
+"lb": "#ffffff",
+"hero": "b/profiremont-hero.jpg"
+}
+},
+"stroymontazhupravlenie": {
+"n": "СтройМонтажУправление",
+"c": "Казань",
+"t": {
+"p": "#ff690a",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/stroymontazhupravlenie-logo.png",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #6d3817)"
+}
+},
+"megamaster": {
+"n": "Мегамастер",
+"c": "Новосибирск",
+"t": {
+"p": "#60c629",
+"pi": "#ffffff",
+"font": "Unbounded",
+"logo": "b/megamaster-logo.png",
+"lb": "#ffffff",
+"hero": "b/megamaster-hero.jpg"
+}
+},
+"renova": {
+"n": "РеНова+",
+"c": "Уфа",
+"t": {
+"p": "#ba0000",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/renova-logo.svg",
+"lb": "#ffffff",
+"hero": "b/renova-hero.jpg"
+}
+},
+"art-room": {
+"n": "Art Room",
+"c": "Казань",
+"t": {
+"p": "#009cb4",
+"pi": "#ffffff",
+"font": "Arimo",
+"up": true,
+"logo": "b/art-room-logo.png",
+"lb": "#ffffff",
+"hero": "b/art-room-hero.jpg"
+}
+},
+"nsk-stroymaks": {
+"n": "Нск-Строймакс",
+"c": "Новосибирск",
+"t": {
+"p": "#ff822e",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/nsk-stroymaks-logo.png",
+"lb": "#ffffff",
+"hero": "b/nsk-stroymaks-hero.jpg"
+}
+},
+"ekonomnyy-remont": {
+"n": "Экономный ремонт",
+"c": "Уфа",
+"t": {
+"p": "#3a9fff",
+"pi": "#ffffff",
+"h": "#292f34",
+"font": "Manrope",
+"up": true,
+"logo": "b/ekonomnyy-remont-logo.png",
+"lb": "#1b1d21",
+"hero": "b/ekonomnyy-remont-hero.jpg"
+}
+},
+"sanremo-nsk": {
+"n": "СанРемО-НСК",
+"c": "Новосибирск",
+"t": {
+"p": "#34903d",
+"pi": "#ffffff",
+"font": "Montserrat",
+"logo": "b/sanremo-nsk-logo.png",
+"lb": "#ffffff",
+"hero": "b/sanremo-nsk-hero.jpg",
+"dark": true
+}
+},
+"sibirskiy-stil": {
+"n": "Сибирский стиль",
+"c": "Новосибирск",
+"t": {
+"p": "#18b4f0",
+"pi": "#ffffff",
+"font": "Raleway",
+"logo": "b/sibirskiy-stil-logo.png",
+"lb": "#ffffff",
+"hero": "b/sibirskiy-stil-hero.jpg",
+"dark": true
+}
+},
+"simmetriya": {
+"n": "Симметрия",
+"c": "Новосибирск",
+"t": {
+"p": "#65406f",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/simmetriya-logo.png",
+"lb": "#ffffff",
+"hero": "b/simmetriya-hero.jpg"
+}
+},
+"stil-stroy": {
+"n": "Стиль строй",
+"c": "Новосибирск",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/stil-stroy-logo.png",
+"lb": "#131313",
+"hero": "b/stil-stroy-hero.jpg",
+"dark": true
+}
+},
+"stroykom": {
+"n": "СтройКом",
+"c": "Новосибирск",
+"t": {
+"p": "#30180c",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/stroykom-logo.svg",
+"lb": "#ffffff",
+"hero": "b/stroykom-hero.jpg"
+}
+},
+"studiya-remonta-alekseya": {
+"n": "Студия ремонта Алексея Борца",
+"c": "Новосибирск",
+"t": {
+"p": "#d2b489",
+"pi": "#141414",
+"font": "Manrope",
+"lt": "Студия ремонта Алексея Борца",
+"lb": "#ffffff",
+"hero": "b/studiya-remonta-alekseya-hero.jpg",
+"dark": true
+}
+},
+"fix-remont": {
+"n": "Fix Ремонт",
+"c": "Казань",
+"t": {
+"p": "#fab600",
+"pi": "#141414",
+"h": "#363636",
+"font": "Manrope",
+"up": true,
+"logo": "b/fix-remont-logo.png",
+"lb": "#2a2a2a",
+"hb": "linear-gradient(135deg, #1f2125, #6b5314)",
+"dark": true
+}
+},
+"domostroy-expert": {
+"n": "DomoStroy Expert",
+"c": "Новосибирск",
+"t": {
+"p": "#3356b7",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"lb": "#ffffff",
+"hero": "b/domostroy-expert-hero.jpg",
+"dark": true,
+"lt": "DomoStroy Expert"
+}
+},
+"bravo": {
+"n": "Bravo",
+"c": "Пермь",
+"t": {
+"p": "#6ccc54",
+"pi": "#141414",
+"h": "#333333",
+"font": "Roboto",
+"up": true,
+"logo": "b/bravo-logo.svg",
+"lb": "#ffffff",
+"hero": "b/bravo-hero.jpg"
+}
+},
+"akademiya-remonta": {
+"n": "Академия Ремонта",
+"c": "Сургут",
+"t": {
+"p": "#cc3c24",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Академия Ремонта",
+"lb": "#ffffff",
+"hero": "b/akademiya-remonta-hero.jpg"
+}
+},
+"profmasterof": {
+"n": "Profmasterof",
+"c": "Уфа",
+"t": {
+"p": "#f28c28",
+"pi": "#ffffff",
+"h": "#16243a",
+"font": "Manrope",
+"lt": "Profmasterof",
+"lb": "#ffffff",
+"hero": "b/profmasterof-hero.jpg"
+}
+},
+"atoll": {
+"n": "Атолл",
+"c": "Казань"
+},
+"gezha-group": {
+"n": "Gezha Group",
+"c": "Новосибирск",
+"t": {
+"p": "#eb721c",
+"pi": "#ffffff",
+"font": "Montserrat",
+"lt": "Gezha Group",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #663c1d)",
+"dark": true
+}
+},
+"v-kvadrate": {
+"n": "В квадрате",
+"c": "Пермь",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Montserrat",
+"lb": "#ffffff",
+"hero": "b/v-kvadrate-hero.jpg",
+"lt": "В квадрате"
+}
+},
+"korona-remonta": {
+"n": "Корона Ремонта",
+"c": "Сургут",
+"t": {
+"p": "#fc9124",
+"pi": "#ffffff",
+"font": "Montserrat",
+"logo": "b/korona-remonta-logo.png",
+"lb": "#fbfbfb",
+"hero": "b/korona-remonta-hero.jpg"
+}
+},
+"terra-otdelkino": {
+"n": "Terra Отделкино",
+"c": "Уфа",
+"t": {
+"p": "#ffc03d",
+"pi": "#141414",
+"font": "Montserrat",
+"up": true,
+"logo": "b/terra-otdelkino-logo.png",
+"lb": "#ffffff",
+"hero": "b/terra-otdelkino-hero.jpg"
+}
+},
+"bikservis": {
+"n": "БикСервис",
+"c": "Казань"
+},
+"avangard-bilding": {
+"n": "Авангард Билдинг",
+"c": "Новосибирск",
+"t": {
+"p": "#f18c2e",
+"pi": "#ffffff",
+"font": "Montserrat",
+"logo": "b/avangard-bilding-logo.svg",
+"lb": "#ffffff",
+"hero": "b/avangard-bilding-hero.jpg"
+}
+},
+"znaki": {
+"n": "Знаки",
+"c": "Пермь",
+"t": {
+"p": "#2d92ed",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/znaki-logo.png",
+"lb": "#fefefe",
+"hero": "b/znaki-hero.jpg"
+}
+},
+"otdelka-surgut": {
+"n": "Отделка-Сургут",
+"c": "Сургут",
+"t": {
+"p": "#9c0c00",
+"pi": "#ffffff",
+"h": "#333333",
+"font": "Inter",
+"lt": "Отделка-Сургут",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #4a1814)"
+}
+},
+"azbuka-remonta-ufa": {
+"n": "Азбука Ремонта-Уфа",
+"c": "Уфа",
+"t": {
+"p": "#9c2424",
+"pi": "#ffffff",
+"h": "#2f2f2f",
+"font": "Manrope",
+"lt": "Азбука Ремонта-Уфа",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #4a2020)"
+}
+},
+"mayd": {
+"n": "Майд",
+"c": "Казань"
+},
+"avantstroy": {
+"n": "Авантстрой",
+"c": "Новосибирск"
+},
+"masterskaya-remonta": {
+"n": "Мастерская ремонта",
+"c": "Пермь",
+"t": {
+"p": "#ea4d47",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Мастерская ремонта",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #662f2d)"
+}
+},
+"dom-v-kvadrate": {
+"n": "Дом в квадрате",
+"c": "Уфа",
+"t": {
+"p": "#d8b56d",
+"pi": "#141414",
+"font": "Raleway",
+"logo": "b/dom-v-kvadrate-logo.svg",
+"lb": "#1b1d21",
+"hero": "b/dom-v-kvadrate-hero.jpg",
+"dark": true
+}
+},
+"remont-16": {
+"n": "Ремонт-16",
+"c": "Казань",
+"t": {
+"p": "#48180c",
+"pi": "#ffffff",
+"font": "Manrope",
+"up": true,
+"logo": "b/remont-16-logo.png",
+"lb": "#e8e8e8",
+"hb": "linear-gradient(135deg, #1f2125, #2d1c18)"
+}
+},
+"brigadansk": {
+"n": "БригадаНСК",
+"c": "Новосибирск",
+"t": {
+"p": "#29b6f6",
+"pi": "#ffffff",
+"h": "#1a2332",
+"font": "Raleway",
+"logo": "b/brigadansk-logo.png",
+"lb": "#ffffff",
+"hero": "b/brigadansk-hero.jpg"
+}
+},
+"parmamaster": {
+"n": "ПармаМастер",
+"c": "Пермь",
+"t": {
+"p": "#b01a33",
+"pi": "#ffffff",
+"font": "Ubuntu",
+"lt": "ПармаМастер",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #511d26)"
+}
+},
+"stroyrekonstruktsiya": {
+"n": "Стройреконструкция",
+"c": "Уфа",
+"t": {
+"p": "#1863dc",
+"pi": "#ffffff",
+"h": "#424242",
+"font": "Open Sans",
+"up": true,
+"logo": "b/stroyrekonstruktsiya-logo.svg",
+"lb": "#ffffff",
+"hero": "b/stroyrekonstruktsiya-hero.jpg"
+}
+},
+"tri-a": {
+"n": "Три А",
+"c": "Казань",
+"t": {
+"p": "#0285db",
+"pi": "#ffffff",
+"font": "Inter",
+"lt": "Три А",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #144260)"
+}
+},
+"gostremont54": {
+"n": "Гостремонт54",
+"c": "Новосибирск",
+"t": {
+"p": "#c6f5a8",
+"pi": "#141414",
+"h": "#2f3944",
+"font": "Manrope",
+"logo": "b/gostremont54-logo.png",
+"lb": "#dbd4ce",
+"hero": "b/gostremont54-hero.jpg"
+}
+},
+"remont-kvartir-s-umom": {
+"n": "Ремонт квартир с умом",
+"c": "Пермь",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Montserrat",
+"up": true,
+"logo": "b/remont-kvartir-s-umom-logo.svg",
+"lb": "#1b1d21",
+"hero": "b/remont-kvartir-s-umom-hero.jpg",
+"dark": true
+}
+},
+"studiya-remonta-radzha-z": {
+"n": "Студия ремонта Раджа Жаркова",
+"c": "Уфа",
+"t": {
+"p": "#456789",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Студия ремонта Раджа Жаркова",
+"lb": "#ffffff",
+"hero": "b/studiya-remonta-radzha-z-hero.jpg"
+}
+},
+"chestnyy-stroitel": {
+"n": "Честный строитель",
+"c": "Казань"
+},
+"domstroy": {
+"n": "ДомСтрой",
+"c": "Новосибирск",
+"t": {
+"p": "#db2223",
+"pi": "#ffffff",
+"font": "Manrope",
+"logo": "b/domstroy-logo.png",
+"lb": "#ffffff",
+"hero": "b/domstroy-hero.jpg"
+}
+},
+"remont-perm": {
+"n": "Ремонт Пермь",
+"c": "Пермь"
+},
+"ufaremont": {
+"n": "УфаРемонт",
+"c": "Уфа",
+"t": {
+"p": "#222222",
+"pi": "#ffffff",
+"font": "Roboto",
+"logo": "b/ufaremont-logo.png",
+"lb": "#1b1d21",
+"hero": "b/ufaremont-hero.jpg"
+}
+},
+"korona": {
+"n": "Корона",
+"c": "Новосибирск",
+"t": {
+"p": "#fc9124",
+"pi": "#ffffff",
+"font": "Montserrat",
+"logo": "b/korona-logo.png",
+"lb": "#fbfbfb",
+"hero": "b/korona-hero.jpg"
+}
+},
+"spetsremont": {
+"n": "СпецРемонт",
+"c": "Пермь",
+"t": {
+"p": "#f7e472",
+"pi": "#141414",
+"font": "Manrope",
+"logo": "b/spetsremont-logo.png",
+"lb": "#ffffff",
+"hero": "b/spetsremont-hero.jpg"
+}
+},
+"krasivaya-zhizn": {
+"n": "Красивая жизнь",
+"c": "Новосибирск",
+"t": {
+"p": "#f0e4cc",
+"pi": "#141414",
+"h": "#000080",
+"font": "Inter",
+"logo": "b/krasivaya-zhizn-logo.png",
+"lb": "#f8f8f8",
+"hero": "b/krasivaya-zhizn-hero.jpg"
+}
+},
+"sferakomfort": {
+"n": "СфераКомфорт",
+"c": "Пермь",
+"t": {
+"p": "#0978c2",
+"pi": "#ffffff",
+"font": "Exo 2",
+"up": true,
+"lt": "СфераКомфорт",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #173e58)",
+"dark": true
+}
+},
+"kreolit": {
+"n": "Креолит",
+"c": "Новосибирск",
+"t": {
+"p": "#efe0b9",
+"pi": "#141414",
+"font": "Mulish",
+"logo": "b/kreolit-logo.png",
+"lb": "#ffffff",
+"hero": "b/kreolit-hero.jpg"
+}
+},
+"remont-kvartir-prm": {
+"n": "Ремонт квартир",
+"c": "Пермь",
+"t": {
+"p": "#000000",
+"pi": "#ffffff",
+"font": "Manrope",
+"lt": "Ремонт квартир",
+"lb": "#ffffff",
+"hb": "linear-gradient(135deg, #1f2125, #141414)"
+}
+},
+"mastersiti": {
+"n": "МастерСити",
+"c": "Новосибирск"
+},
+"minimalisty-interera": {
+"n": "Минималисты Интерьера",
+"c": "Новосибирск",
+"t": {
+"p": "#c18a2d",
+"pi": "#ffffff",
+"font": "Inter",
+"up": true,
+"logo": "b/minimalisty-interera-logo.svg",
+"lb": "#ffffff",
+"hero": "b/minimalisty-interera-hero.jpg"
+}
+},
+"novaya-era": {
+"n": "Новая Эра",
+"c": "Новосибирск"
+},
+"rusardo": {
+"n": "Русардо",
+"c": "Новосибирск",
+"t": {
+"p": "#f8ae20",
+"pi": "#141414",
+"font": "Manrope",
+"up": true,
+"logo": "b/rusardo-logo.png",
+"lb": "#1b1d21",
+"hero": "b/rusardo-hero.jpg"
+}
+},
+"skay-stroy": {
+"n": "Скай Строй",
+"c": "Новосибирск",
+"t": {
+"p": "#ffad00",
+"pi": "#141414",
+"font": "Open Sans",
+"logo": "b/skay-stroy-logo.png",
+"lb": "#ffffff",
+"hero": "b/skay-stroy-hero.jpg"
+}
+},
+"soyka": {
+"n": "Сойка",
+"c": "Новосибирск",
+"t": {
+"p": "#12305c",
+"pi": "#ffffff",
+"font": "Roboto",
+"logo": "b/soyka-logo.png",
+"lb": "#ffffff",
+"hero": "b/soyka-hero.jpg"
+}
+},
+"stroydom54": {
+"n": "СтройДом54",
+"c": "Новосибирск",
+"t": {
+"p": "#c0cce4",
+"pi": "#141414",
+"h": "#1e6333",
+"font": "Manrope",
+"logo": "b/stroydom54-logo.png",
+"lb": "#ffffff",
+"hero": "b/stroydom54-hero.jpg"
+}
+},
+"torgstroykomplekt": {
+"n": "ТоргСтройКомплект",
+"c": "Новосибирск"
+},
+"ekvid": {
+"n": "ЭкВид",
+"c": "Новосибирск",
+"t": {
+"p": "#fac514",
+"pi": "#141414",
+"font": "Roboto",
+"logo": "b/ekvid-logo.png",
+"lb": "#1b1d21",
+"hero": "b/ekvid-hero.jpg",
+"dark": true
+}
+},
+"remontvkazani-com": {
+"n": "Remontvkazani.com",
+"c": "Казань"
+},
+"interiorpro": {
+"n": "InteriorPro",
+"c": "Новосибирск"
+},
+"akademiya-komforta": {
+"n": "Академия Комфорта",
+"c": "Пермь"
+},
+"a-kvadrat": {
+"n": "А-Квадрат",
+"c": "Сургут"
+},
+"master-uroven": {
+"n": "Мастер уровень",
+"c": "Уфа"
+},
+"sweet-home": {
+"n": "Sweet Home",
+"c": "Казань"
+},
+"tsentr-dizayna-i-remonta": {
+"n": "Центр дизайна и ремонта Дом",
+"c": "Новосибирск"
+},
+"uyut-master": {
+"n": "Уют Мастер",
+"c": "Пермь"
+},
+"evro-stil": {
+"n": "Евро Стиль",
+"c": "Сургут"
+},
+"remont-v-detalyah": {
+"n": "Ремонт в деталях",
+"c": "Уфа"
+},
+"dom-s-umom-kzn": {
+"n": "Дом с умом",
+"c": "Казань"
+},
+"remo86": {
+"n": "Ремо86",
+"c": "Сургут"
+},
+"spektr-stroy": {
+"n": "Спектр Строй",
+"c": "Казань"
+},
+"yugraremont": {
+"n": "ЮграРемонт",
+"c": "Сургут"
+},
+"tat-remont-pod-klyuch": {
+"n": "ТАТ Ремонт под ключ",
+"c": "Казань"
 }
 };
